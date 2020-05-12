@@ -1,0 +1,30 @@
+[user]
+	name = Charles Hendrie
+	email = chad.hendrie@merrillcorp.com
+
+[merge]
+    tool = p4merge
+
+[mergetool "p4merge"]
+    path = /Applications/p4merge.app/Contents/MacOS/p4merge
+    keepBackup = false
+
+[diff]
+    guitool = p4merge
+
+[difftool]
+    prompt = false
+
+[alias]
+#	co = checkout
+#	br = branch
+#	cm = commit
+#	ci = commit
+#	st = status
+	last = log -1 HEAD --name-only
+	visual = !gitk
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
