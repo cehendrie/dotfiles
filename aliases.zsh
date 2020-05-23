@@ -8,10 +8,14 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 #
-alias ll.='ls -ld .*'
+alias ls='exa'
+alias ll='exa -la'
+alias ll.='exa -ld .*'
+alias lt='exa -T'
+alias ltd='exa -TD'
 alias h='fc -l 0'
-alias el='exa -la'
 
+alias devd='cd ~/dev/projects/github.com/cehendrie/'
 alias vi=vim
 alias sublime='open -a /Applications/Sublime\ Text.app/'
 alias textmate='open -a /Applications/TextMate.app/'
