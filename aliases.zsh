@@ -28,7 +28,7 @@ alias ohmyzsh='sublime ~/.oh-my-zsh'
 
 alias gpom='git push origin master'
 
-# datasite projects
+# local projects
 alias gitd='cd ~/dev/projects/github.devtools.merrillcorp.com/chendri/'
 alias gitm='cd ~/dev/projects/github.com/cehendrie/'
 alias red='cd ~/dev/projects/github.com/cehendrie/redaction-service'
