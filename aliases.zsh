@@ -8,6 +8,10 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 #
+
+# A modern replacement for ls
+# https://the.exa.website
+
 alias ls='exa'
 alias ll='exa -la'
 alias ll.='exa -ld .*'
