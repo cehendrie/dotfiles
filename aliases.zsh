@@ -14,11 +14,10 @@ alias ll.='exa -ld .*'
 alias lt='exa -T'
 alias ltd='exa -TD'
 alias h='fc -l 0'
-
+alias cat=bat
 alias devd='cd ~/dev/projects/github.com/cehendrie/'
+
 alias vi=vim
-alias sublime='open -a /Applications/Sublime\ Text.app/'
-alias textmate='open -a /Applications/TextMate.app/'
 
 alias zshconfig='sublime ~/.zshrc'
 alias ohmyzsh='sublime ~/.oh-my-zsh'
@@ -41,6 +40,9 @@ alias redt='cd ~/dev/projects/github.com/cehendrie/redaction-common-test'
 alias redts='cd ~/dev/projects/github.com/cehendrie/redacted-terms-search-service'
 
 # Apple / OS X Specfic
+
+alias sublime='open -a /Applications/Sublime\ Text.app/'
+alias textmate='open -a /Applications/TextMate.app/'
 
 # https://lucasfcosta.com/2019/02/10/terminal-guide-2019.html
 # https://github.com/lucasfcosta/dotfiles/blob/c01b73c6bd71b4888cae31440e14bf42297b3455/.aliases
