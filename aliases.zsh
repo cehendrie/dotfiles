@@ -38,6 +38,8 @@ alias redbp='cd ~/dev/projects/github.com/cehendrie/redaction-batch-processing-s
 alias redc='cd ~/dev/projects/github.com/cehendrie/javelin-common-redaction'
 alias redpc='cd ~/dev/projects/github.com/cehendrie/javelin-common-redaction-processing'
 alias redct='cd ~/dev/projects/github.com/cehendrie/redaction-common-test'
+alias redltt='cd ~/dev/repos/business/github.com/cehendrie/redaction-load-test-tool'
+alias reddr='cd ~/dev/repos/business/github.com/cehendrie/doc-reprocessing-service'
 
 # deprecated projects
 alias redts='cd ~/dev/projects/github.com/cehendrie/redacted-terms-search-service'
