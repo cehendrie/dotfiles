@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-#export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/chendrie/.oh-my-zsh"
+export ZSH="/Users/chendri/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -33,7 +33,7 @@ ZSH_THEME="robbyrussell"
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
+DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -69,16 +69,16 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
+	alias-finder
+	brew 
 	colored-man-pages 
 	colorize 
-	pip 
-	python 
-	brew 
+	git 
 	osx
+	python 
+	tmux
 	zsh-autosuggestions
-	zsh-syntax-highlighting
-	tmux)
+	zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,15 +118,13 @@ setopt no_share_history
 bindkey -s "^[Op" "0"
 bindkey -s "^[On" "."
 bindkey -s "^[OM" "^M"
-# 1 2 3
+# 1 - 9
 bindkey -s "^[Oq" "1"
 bindkey -s "^[Or" "2"
 bindkey -s "^[Os" "3"
-# 4 5 6
 bindkey -s "^[Ot" "4"
 bindkey -s "^[Ou" "5"
 bindkey -s "^[Ov" "6"
-# 7 8 9
 bindkey -s "^[Ow" "7"
 bindkey -s "^[Ox" "8"
 bindkey -s "^[Oy" "9"
@@ -136,3 +134,5 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 bindkey -s "^[OX" "="
+
+if [ -f /usr/local/bin/screenfetch ]; then screenfetch; fi
