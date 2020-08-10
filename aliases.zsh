@@ -48,11 +48,6 @@ alias redts='cd ~/dev/projects/github.com/cehendrie/redacted-terms-search-servic
 alias sublime='open -a /Applications/Sublime\ Text.app/'
 alias textmate='open -a /Applications/TextMate.app/'
 alias bbedit='open -a /Applications/BBEdit.app/'
-# https://lucasfcosta.com/2019/02/10/terminal-guide-2019.html
-# https://github.com/lucasfcosta/dotfiles/blob/c01b73c6bd71b4888cae31440e14bf42297b3455/.aliases
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # zsh
 alias zshconfig='sublime ~/.zshrc'
