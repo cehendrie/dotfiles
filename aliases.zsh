@@ -52,3 +52,9 @@ alias bbedit='open -a /Applications/BBEdit.app/'
 # zsh
 alias zshconfig='sublime ~/.zshrc'
 alias ohmyzsh='sublime ~/.oh-my-zsh'
+
+function lsofport() {
+    lsof -n -i4TCP:$1 | grep LISTEN
+}
+alias alias lsport=lsofport
+
