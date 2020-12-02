@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Note: since java and python are also managed by macOS, they need to be at the beginning of the PATH
+export PATH=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin:/usr/local/opt/python@3.9/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/chendrie/.oh-my-zsh"
+export ZSH="/Users/chendri/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
