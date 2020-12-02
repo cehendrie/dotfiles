@@ -64,6 +64,7 @@ window:
 
   # Window title
   #title: Alacritty
+  dynamic_title: true
 
   # Window class (Linux/BSD only):
   #class:
@@ -363,8 +364,8 @@ background_opacity: 0.9
   # When set to `true`, selected text will be copied to the primary clipboard.
   #save_to_clipboard: false
 
-# Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
+# Allow terminal applications to change Alacritty's window title. deprecated
+# dynamic_title: true
 
 cursor:
   # Cursor style
