@@ -20,9 +20,11 @@ alias ltd='exa -TD'
 
 alias h='fc -l 0'
 alias cat=bat
-alias vi=vim
+alias vi=nvim
 alias gitm='cd ~/dev/projects/github.com/cehendrie/'
 alias devd='cd ~/dev/repos/github.com/cehendrie/'
+
+export EDITOR="nvim"
 
 # git
 alias gpom='git push origin master'
@@ -41,8 +43,8 @@ alias redct='cd ~/dev/repos/github.com/cehendrie/redaction-common-test'
 alias redltt='cd ~/dev/repos/github.com/cehendrie/redaction-load-test-tool'
 alias reddr='cd ~/dev/repos/github.com/cehendrie/doc-reprocessing-service'
 alias redgm='cd ~/dev/repos/github.com/cehendrie/redaction-grid-mfe'
-alias rdr='cd ~/dev/repos/github.com/cehendrie/doc-reprocessing-service'
 alias drs='cd ~/dev/repos/github.com/cehendrie/doc-reprocessing-service'
+alias docr='cd ~/dev/repos/github.com/cehendrie/doc-reprocessing-service'
 
 # smart tools projects
 alias sts='cd ~/dev/repos/github.com/cehendrie/smart-tools-service'
@@ -55,6 +57,9 @@ alias aicm='cd ~/dev/repos/github.com/cehendrie/ai-checklist-mapper-service'
 alias aisc='cd ~/dev/repos/github.com/cehendrie/ai-smart-categorization-service'
 alias aiscu='cd ~/dev/repos/github.com/cehendrie/ai-smart-categorization-utils'
 alias tli='cd ~/dev/repos/github.com/cehendrie/task-list-import-service'
+
+# personal projects
+alias dot 'cd ~/dev/darkportal/repos/github.com/cehendrie/dotfiles'
 
 # datasite
 alias dsc='cd ~/dev/repos/github.com/cehendrie/ds1-configurations'
@@ -71,4 +76,17 @@ alias ohmyzsh='textmate ~/.oh-my-zsh'
 function lsofport() {
 	lsof -n -i4TCP:$1 | grep LISTEN
 }
-alias alias lsport=lsofport
+alias lsport=lsofport
+
+function gbdaall() {
+  cd /Users/Chad.Hendrie/dev/repos/github.com/cehendrie/
+  for f in *; do
+      if [ -d "$f" ]; then
+          echo "> cleaning old branches from $f"
+          cd $f
+          gbda
+          cd ../
+      fi
+  done
+}
+alias gbdaa=gbdaall
