@@ -24,11 +24,13 @@ alias vi=nvim
 alias gitm='cd ~/dev/projects/github.com/cehendrie/'
 alias devd='cd ~/dev/repos/github.com/cehendrie/'
 
+# make sure neovim is exported as the editor
 export EDITOR="nvim"
 
 # git
 alias gpom='git push origin master'
 alias gpoma='git push origin main'
+alias gpomn='git push origin main'
 
 # redaction projects
 alias red='cd ~/dev/repos/github.com/cehendrie/redaction-service'
@@ -58,16 +60,25 @@ alias aisc='cd ~/dev/repos/github.com/cehendrie/ai-smart-categorization-service'
 alias aiscu='cd ~/dev/repos/github.com/cehendrie/ai-smart-categorization-utils'
 alias tli='cd ~/dev/repos/github.com/cehendrie/task-list-import-service'
 
+# core diligence
+alias dildm='cd ~/dev/repos/github.com/cehendrie/doc-metadata-service'
+alias dilpw='cd ~/dev/repos/github.com/cehendrie/processing-workflow-service'
+alias dildl='cd ~/dev/repos/github.com/cehendrie/doc-language-service'
+alias ddm='cd ~/dev/repos/github.com/cehendrie/doc-metadata-service'
+alias dpw='cd ~/dev/repos/github.com/cehendrie/processing-workflow-service'
+alias ddl='cd ~/dev/repos/github.com/cehendrie/doc-language-service'
+
 # personal projects
 alias dot 'cd ~/dev/darkportal/repos/github.com/cehendrie/dotfiles'
 
 # datasite
-alias dsc='cd ~/dev/repos/github.com/cehendrie/ds1-configurations'
-alias dkm='cd ~/dev/repos/github.com/cehendrie/datasite-k8s-manifests'
+alias dsconf='cd ~/dev/repos/github.com/cehendrie/ds1-configurations'
+alias dsmanif='cd ~/dev/repos/github.com/cehendrie/datasite-k8s-manifests'
 
 # apple / macOs
 alias sublime='open -a /Applications/Sublime\ Text.app/'
 alias textmate='open -a /Applications/TextMate.app/'
+alias bbedit='open -a /Applications/BBEdit.app/'
 
 # zsh
 alias zshconfig='textmate ~/.zshrc'
