@@ -727,3 +727,5 @@ key_bindings:
   # Print all received window events.
   #print_events: false
 
+import:
+  - /Users/chendri/.config/alacritty/dracula.yml
