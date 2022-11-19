@@ -9,12 +9,12 @@
 # cd $brainstormr
 #
 
+alias ..='cd ..'
+alias ...='cd ../..'
 alias h='fc -l 0'
 alias cat=bat
 alias vi=nvim
-alias devd='cd ~/dev/projects/github.com/cehendrie/'
-alias devh='cd ~/dev/repos/github.com/cehendrie/'
-alias devl='cd ~/dev/repos/gitlab.com/cehendrie/'
+alias devd='cd ~/dev/repos/github.com/cehendrie/'
 alias repoh='cd ~/dev/repos/github.com/cehendrie/'
 alias repol='cd ~/dev/repos/gitlab.com/cehendrie/'
 
@@ -29,13 +29,27 @@ alias ll.='exa -ld .*'
 alias lt='exa -T'
 alias ltd='exa -TD'
 
-# git
+# git (https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh)
+alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gd='git diff'
+alias glg='git log --stat'
+alias glp="_git_log_prettily"
+alias gr='git remote'
+alias gst='git status'
+alias glum='git pull upstream $(git_main_branch)'
+
+# git personal
 alias gpom='git push origin master'
 alias gpoma='git push origin main'
 
 # apple / macOs
 alias sublime='open -a /Applications/Sublime\ Text.app/'
 alias bbedit='open -a /Applications/BBEdit.app/'
+alias textmate='open -a /Applications/TextMate.app'
 
 # zsh
 alias zshconfig='sublime ~/.zshrc'
