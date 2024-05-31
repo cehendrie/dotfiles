@@ -14,20 +14,18 @@ alias ...='cd ../..'
 alias h='fc -l 0'
 alias cat=bat
 alias vi=nvim
-alias devd='cd ~/dev/repos/github.com/cehendrie/'
-alias repoh='cd ~/dev/repos/github.com/cehendrie/'
-alias repol='cd ~/dev/repos/gitlab.com/cehendrie/'
+alias devd='cd ~/dev/repos/github.com/MerrillCorporation/'
 
 export EDITOR="nvim"
 
-# exa
+# exa / eza
 # A modern replacement for ls
 # https://the.exa.website
-alias ls='exa'
-alias ll='exa -la'
-alias ll.='exa -ld .*'
-alias lt='exa -T'
-alias ltd='exa -TD'
+alias ls='eza'
+alias ll='eza -la'
+alias ll.='eza -ld .*'
+alias lt='eza -T'
+alias ltd='eza -TD'
 
 # git (https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh)
 alias g='git'
